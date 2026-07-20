@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Church In The Name of our Lord — Magojaneng Village, Kuruman, Northern Cape</title>
+  <meta name="description" content="Church In The Name of our Lord is a Spirit-filled church in Magojaneng Village, Kuruman, Northern Cape — worship, the Word, prayer and healing. Plan your visit." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Church In The Name of our Lord — Magojaneng Village, Kuruman" />
+  <meta property="og:description" content="A Spirit-filled family church — worship, the Word, prayer and community." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%94%A5%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts: Fraunces (editorial serif display, incl. italic), Inter (body/labels) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind (Play CDN) + brand config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#0A0E1A', ash: '#101726', coal: '#182238',
+            ember: '#3B6EF5', blaze: '#1E3A8F', gold: '#F5C542',
+            bone: '#EEF2FB',
+          },
+          fontFamily: {
+            display: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+            scripture: ['Fraunces', 'Georgia', 'serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-ink text-bone font-sans antialiased selection:bg-ember selection:text-ink">
+
+  <!-- Ignite intro -->
+  <div id="intro" class="fixed inset-0 z-[100] flex items-center justify-center bg-ink">
+    <div class="text-center">
+      <div class="intro-spark mx-auto mb-5 h-2 w-2 rounded-full bg-ember"></div>
+      <p class="font-sans text-base font-semibold uppercase tracking-[0.4em] text-bone/80">In His Name</p>
+    </div>
+  </div>
+
+  <!-- Scroll progress fire line -->
+  <div id="progress" class="fixed left-0 top-0 z-[60] h-[3px] w-0 bg-gradient-to-r from-gold via-ember to-blaze"></div>
+
+  <!-- Nav -->
+  <header id="nav" class="fixed inset-x-0 top-0 z-50 transition-all duration-500">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+      <a href="#top" class="group flex items-center gap-2.5">
+        <span class="ember-dot h-2.5 w-2.5 rounded-full bg-ember"></span>
+        <span class="font-sans text-sm font-semibold uppercase tracking-[0.28em] text-bone">In His Name</span>
+      </a>
+      <nav class="hidden items-center gap-9 text-sm font-medium text-bone/70 md:flex">
+        <a href="#welcome" class="navlink">Welcome</a>
+        <a href="#expect" class="navlink">What to expect</a>
+        <a href="#times" class="navlink">Times &amp; place</a>
+        <a href="#ministries" class="navlink">Ministries</a>
+        <a href="#give" class="navlink">Give</a>
+      </nav>
+      <a href="#visit" class="cta-sm">Plan your visit</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="relative flex min-h-[100svh] items-center overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('assets/img/hero.jpg')" aria-hidden="true"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-ink/75 via-ink/88 to-ink" aria-hidden="true"></div>
+      <canvas id="embers" class="pointer-events-none absolute inset-0 h-full w-full"></canvas>
+      <div class="hero-glow pointer-events-none absolute inset-0"></div>
+
+      <div class="relative z-10 mx-auto w-full max-w-7xl px-6 pt-28 lg:px-10">
+        <p class="reveal mb-6 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.32em] text-gold/90">
+          <span class="h-px w-8 bg-gold/60"></span> Magojaneng Village, Kuruman · Northern Cape
+        </p>
+
+        <h1 class="hero-title font-display font-semibold leading-[0.92] tracking-[-0.02em] text-bone">
+          <span class="line block text-[13vw] md:text-[9vw] lg:text-[8.4rem]">People of</span>
+          <span class="line block italic font-medium bg-gradient-to-br from-gold via-ember to-blaze bg-clip-text text-transparent text-[13vw] md:text-[9vw] lg:text-[8.4rem]">the Name.</span>
+        </h1>
+
+        <p class="reveal mt-8 max-w-xl text-lg leading-relaxed text-bone/75">
+          Church In The Name of our Lord is a Spirit-filled church in the heart of the community — real worship,
+          the living Word, and a family that prays. Wherever you are on the journey, there's a place for you here.
+        </p>
+
+        <div class="reveal mt-10 flex flex-wrap items-center gap-4">
+          <a href="#visit" class="cta">Plan your visit</a>
+          <a href="#welcome" class="cta-ghost">A word of welcome</a>
+        </div>
+      </div>
+
+      <a href="#welcome" class="scroll-cue absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-bone/50" aria-label="Scroll down">
+        <span class="mb-2 block text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+        <span class="mx-auto block h-10 w-[1px] bg-gradient-to-b from-ember to-transparent"></span>
+      </a>
+    </section>
+
+    <!-- ============ WELCOME ============ -->
+    <section id="welcome" class="relative border-t border-white/5 bg-ash py-28 lg:py-36">
+      <div class="mx-auto grid max-w-7xl gap-14 px-6 lg:grid-cols-12 lg:px-10">
+        <div class="lg:col-span-5">
+          <p class="eyebrow reveal">Welcome home</p>
+          <h2 class="reveal mt-5 font-display text-5xl leading-[0.95] text-bone md:text-6xl">
+            You were<br>made for<br><span class="text-ember">more.</span>
+          </h2>
+          <div class="reveal mt-8 overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+            <img src="assets/img/welcome.jpg" alt="Church In The Name of our Lord congregation gathered in worship" loading="lazy" width="800" height="600" class="h-64 w-full object-cover lg:h-80" />
+          </div>
+        </div>
+        <div class="lg:col-span-7">
+          <div class="reveal space-y-6 text-lg leading-relaxed text-bone/75">
+            <p>We are an ordinary people who have met an extraordinary God. Under the leadership of
+              <strong class="font-semibold text-bone">Pastor Mokgadi Thapelo</strong>, Church In The Name of our Lord
+              exists to see lives filled with hope — in Magojaneng Village, Kuruman and across the community.</p>
+            <p>Sundays are warm and unhurried. You'll find honest worship, a message rooted in Scripture,
+              and people who will know your name. Come as you are. Leave encouraged and sent.</p>
+          </div>
+          <div class="reveal mt-10 grid grid-cols-3 gap-6 border-t border-white/10 pt-8">
+            <div><div class="stat font-display text-4xl text-gold">3</div><div class="statlabel">Weekly gatherings</div></div>
+            <div><div class="stat font-display text-4xl text-gold">1</div><div class="statlabel">Family, many stories</div></div>
+            <div><div class="stat font-display text-4xl text-gold">All</div><div class="statlabel">Are welcome here</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT TO EXPECT ============ -->
+    <section id="expect" class="relative py-28 lg:py-36">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="max-w-2xl">
+          <p class="eyebrow reveal">What to expect</p>
+          <h2 class="reveal mt-5 font-display text-5xl leading-[0.95] text-bone md:text-6xl">Your first Sunday</h2>
+          <p class="reveal mt-6 text-lg text-bone/70">No pressure, no performance — just a family who will make you feel at home.</p>
+        </div>
+
+        <div class="mt-16 grid gap-5 md:grid-cols-3">
+          <article class="card group reveal">
+            <span class="card-num">01</span>
+            <h3 class="card-title">Spirit-filled worship</h3>
+            <p class="card-body">Music that lifts the room and makes space to meet God. Come to sing, or just to sit and breathe.</p>
+          </article>
+          <article class="card group reveal">
+            <span class="card-num">02</span>
+            <h3 class="card-title">The living Word</h3>
+            <p class="card-body">Clear, honest teaching straight from Scripture — for real life, real questions, real Mondays.</p>
+          </article>
+          <article class="card group reveal">
+            <span class="card-num">03</span>
+            <h3 class="card-title">Prayer &amp; healing</h3>
+            <p class="card-body">We pray for one another and we expect God to move. Bring what's heavy — you won't carry it alone.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SCRIPTURE (pinned) ============ -->
+    <section id="scripture" class="relative overflow-hidden bg-ash py-40 lg:py-56">
+      <canvas id="embers2" class="pointer-events-none absolute inset-0 h-full w-full opacity-70"></canvas>
+      <div class="hero-glow pointer-events-none absolute inset-0"></div>
+      <div class="relative z-10 mx-auto max-w-5xl px-6 text-center">
+        <p id="verseTag" class="eyebrow mx-auto">Ephesians 4:4-5</p>
+        <blockquote id="verse" class="mt-8 font-scripture text-4xl italic leading-tight text-bone md:text-6xl lg:text-7xl">
+          &ldquo;One body and one Spirit… one Lord, one faith, one baptism.&rdquo;
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ MOMENTS ============ -->
+    <section id="moments" class="relative py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <p class="eyebrow reveal">Life at In His Name</p>
+        <h2 class="reveal mt-5 font-display text-5xl leading-[0.95] text-bone md:text-6xl">One body, one Spirit, one hope</h2>
+        <div class="mt-12 grid gap-4 sm:grid-cols-3">
+          <figure class="reveal group relative overflow-hidden rounded-2xl">
+            <img src="assets/img/moment-1.jpg" alt="The worship team leading praise" loading="lazy" width="800" height="600" class="h-72 w-full object-cover transition duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div>
+            <figcaption class="absolute bottom-4 left-5 font-display text-2xl tracking-wide text-bone">Worship</figcaption>
+          </figure>
+          <figure class="reveal group relative overflow-hidden rounded-2xl">
+            <img src="assets/img/moment-2.jpg" alt="Hands lifted in prayer" loading="lazy" width="800" height="600" class="h-72 w-full object-cover transition duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div>
+            <figcaption class="absolute bottom-4 left-5 font-display text-2xl tracking-wide text-bone">Prayer</figcaption>
+          </figure>
+          <figure class="reveal group relative overflow-hidden rounded-2xl">
+            <img src="assets/img/moment-3.jpg" alt="Serving the Magojaneng Village, Kuruman community" loading="lazy" width="800" height="600" class="h-72 w-full object-cover transition duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent"></div>
+            <figcaption class="absolute bottom-4 left-5 font-display text-2xl tracking-wide text-bone">Community</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TIMES & PLACE ============ -->
+    <section id="times" class="relative py-28 lg:py-36">
+      <div class="mx-auto grid max-w-7xl gap-14 px-6 lg:grid-cols-2 lg:px-10">
+        <div>
+          <p class="eyebrow reveal">Times &amp; place</p>
+          <h2 class="reveal mt-5 font-display text-5xl leading-[0.95] text-bone md:text-6xl">Come and see</h2>
+          <div class="mt-10 divide-y divide-white/10 border-y border-white/10">
+            <div class="svc reveal">
+              <div><div class="svc-name">Sunday Celebration</div><div class="svc-sub">Worship · Word · Family</div></div>
+              <div class="svc-time">09:00</div>
+            </div>
+            <div class="svc reveal">
+              <div><div class="svc-name">Bible Study &amp; Prayer</div><div class="svc-sub">Wednesdays</div></div>
+              <div class="svc-time">18:00</div>
+            </div>
+            <div class="svc reveal">
+              <div><div class="svc-name">In His Name Night</div><div class="svc-sub">Fridays · Worship &amp; intercession</div></div>
+              <div class="svc-time">18:30</div>
+            </div>
+          </div>
+          <p class="reveal mt-8 flex items-start gap-3 text-bone/70">
+            <span class="mt-1 text-ember">◆</span>
+            <span>Magojaneng Village, Kuruman, Northern Cape.<br><span class="text-sm text-bone/50">Tap the map for directions — we'll be watching for you.</span></span>
+          </p>
+        </div>
+        <div class="reveal overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+          <iframe title="Church In The Name of our Lord location — Magojaneng Village, Kuruman"
+            src="https://www.google.com/maps?q=Magojaneng Village, Kuruman,+Northern Cape,+South+Africa&output=embed"
+            class="h-full min-h-[380px] w-full grayscale-[0.3]" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MINISTRIES ============ -->
+    <section id="ministries" class="relative border-t border-white/5 bg-ash py-28 lg:py-36">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="max-w-2xl">
+          <p class="eyebrow reveal">Get involved</p>
+          <h2 class="reveal mt-5 font-display text-5xl leading-[0.95] text-bone md:text-6xl">Find your people</h2>
+        </div>
+        <div class="mt-14 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="min group reveal"><h3 class="min-title">Prayer &amp; Intercession</h3><p class="min-body">The engine room. We stand in the gap for our town.</p></div>
+          <div class="min group reveal"><h3 class="min-title">Worship &amp; Praise</h3><p class="min-body">Voices and instruments lifted with everything we have.</p></div>
+          <div class="min group reveal"><h3 class="min-title">Youth on Fire</h3><p class="min-body">The next generation, discipled and unashamed.</p></div>
+          <div class="min group reveal"><h3 class="min-title">Community Outreach</h3><p class="min-body">Faith with feet — feeding, visiting, loving Magojaneng Village, Kuruman.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT CTA ============ -->
+    <section id="visit" class="relative overflow-hidden py-32 lg:py-44">
+      <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image:url('assets/img/visit.jpg')" aria-hidden="true"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-ink via-ink/90 to-ink" aria-hidden="true"></div>
+      <div class="hero-glow pointer-events-none absolute inset-0"></div>
+      <div class="relative z-10 mx-auto max-w-4xl px-6 text-center">
+        <p class="eyebrow mx-auto reveal">This Sunday</p>
+        <h2 class="reveal mt-6 font-display text-6xl leading-[0.9] text-bone md:text-8xl">
+          Bring<br><span class="bg-gradient-to-br from-gold via-ember to-blaze bg-clip-text text-transparent">everything.</span>
+        </h2>
+        <p class="reveal mx-auto mt-8 max-w-xl text-lg text-bone/75">
+          Your questions, your doubts, your family, your hope. There's room at this fire for all of it — and for you.
+        </p>
+        <div class="reveal mt-10 flex flex-wrap justify-center gap-4">
+          <a href="#times" class="cta">See service times</a>
+          <a href="tel:+27000000000" class="cta-ghost">Call the church</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GIVE ============ -->
+    <section id="give" class="border-t border-white/5 bg-ash py-24">
+      <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-6 lg:flex-row lg:items-center lg:px-10">
+        <div class="max-w-xl">
+          <p class="eyebrow reveal">Give</p>
+          <h2 class="reveal mt-4 font-display text-4xl text-bone md:text-5xl">Fuel the fire</h2>
+          <p class="reveal mt-4 text-bone/70">Every gift keeps the doors open and the outreach moving. Thank you for sowing into what God is doing in Magojaneng Village, Kuruman.</p>
+        </div>
+        <a href="#visit" class="cta reveal shrink-0">Give an offering</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="relative overflow-hidden bg-ink py-16">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+      <div class="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <span class="h-2.5 w-2.5 rounded-full bg-ember"></span>
+            <span class="font-display text-2xl tracking-[0.18em] text-bone">CHURCH&nbsp;IN&nbsp;THE&nbsp;NAME&nbsp;OF&nbsp;OUR&nbsp;LORD</span>
+          </div>
+          <p class="mt-4 max-w-sm text-sm leading-relaxed text-bone/55">
+            A Spirit-filled church in Magojaneng Village, Kuruman, Northern Cape. Led by Pastor Mokgadi Thapelo.
+            Come as you are — leave encouraged and sent.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-x-12 gap-y-2 text-sm text-bone/60">
+          <a href="#welcome" class="footlink">Welcome</a>
+          <a href="#times" class="footlink">Times &amp; place</a>
+          <a href="#expect" class="footlink">What to expect</a>
+          <a href="#ministries" class="footlink">Ministries</a>
+          <a href="#visit" class="footlink">Plan your visit</a>
+          <a href="#give" class="footlink">Give</a>
+        </div>
+      </div>
+      <div class="mt-14 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-6 text-xs text-bone/40 sm:flex-row sm:items-center">
+        <p>© <span id="year"></span> Church In The Name of our Lord · Magojaneng Village, Kuruman, Northern Cape</p>
+        <p>Website by <span class="text-bone/70">World Development Fund</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

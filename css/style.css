@@ -1,0 +1,122 @@
+/* Revival Fire Ministry — custom styles atop Tailwind.
+   Concept: sacred fire in the Kalahari night. */
+
+:root {
+  --ink: #0A0E1A;
+  --ember: #3B6EF5;
+  --blaze: #1E3A8F;
+  --gold: #F5C542;
+  --bone: #EEF2FB;
+}
+
+html { scroll-behavior: smooth; }
+body { overflow-x: hidden; }
+
+/* ---- atmospheric glow behind heroes ---- */
+.hero-glow {
+  background:
+    radial-gradient(60% 55% at 50% 108%, rgba(59,110,245,0.30), transparent 60%),
+    radial-gradient(40% 40% at 80% 100%, rgba(245,197,66,0.18), transparent 60%),
+    radial-gradient(45% 45% at 15% 95%, rgba(30,58,143,0.20), transparent 65%);
+}
+
+/* ---- nav ---- */
+#nav.scrolled {
+  background: rgba(10,14,26,0.72);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.navlink { position: relative; transition: color .3s; }
+.navlink:hover { color: var(--bone); }
+.navlink::after {
+  content: ''; position: absolute; left: 0; bottom: -6px; height: 1px; width: 0;
+  background: linear-gradient(90deg, var(--gold), var(--ember)); transition: width .35s ease;
+}
+.navlink:hover::after { width: 100%; }
+
+.ember-dot { box-shadow: 0 0 14px 2px rgba(59,110,245,0.8); animation: pulse 2.4s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .55; transform: scale(1.35); } }
+
+/* ---- buttons ---- */
+.cta, .cta-sm {
+  display: inline-flex; align-items: center; gap: .5rem;
+  background: linear-gradient(120deg, var(--ember), var(--blaze));
+  color: #1a0d06; font-weight: 700; letter-spacing: .01em;
+  border-radius: 999px; transition: transform .3s, box-shadow .3s, filter .3s;
+  box-shadow: 0 10px 30px -10px rgba(59,110,245,0.6);
+}
+.cta { padding: .95rem 1.9rem; font-size: 1rem; }
+.cta-sm { padding: .6rem 1.2rem; font-size: .82rem; }
+.cta:hover, .cta-sm:hover { transform: translateY(-2px); filter: brightness(1.06); box-shadow: 0 18px 40px -12px rgba(59,110,245,0.75); }
+
+.cta-ghost {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .95rem 1.7rem; border-radius: 999px; font-weight: 600; color: var(--bone);
+  border: 1px solid rgba(238,242,251,0.22); transition: border-color .3s, background .3s, transform .3s;
+}
+.cta-ghost:hover { border-color: rgba(245,197,66,0.7); background: rgba(245,197,66,0.06); transform: translateY(-2px); }
+
+/* ---- shared bits ---- */
+.eyebrow {
+  display: inline-flex; align-items: center; gap: .6rem;
+  font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .3em;
+  color: rgba(245,197,66,0.9);
+}
+.eyebrow::before { content: '🔥'; font-size: .8rem; filter: grayscale(0.1); }
+
+.statlabel { margin-top: .35rem; font-size: .8rem; color: rgba(238,242,251,0.55); line-height: 1.3; }
+
+/* ---- expect cards ---- */
+.card {
+  position: relative; padding: 2.25rem 1.9rem 2rem; border-radius: 1rem;
+  background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.08); overflow: hidden;
+  transition: transform .45s cubic-bezier(.2,.7,.2,1), border-color .45s, background .45s;
+}
+.card::before {
+  content: ''; position: absolute; inset: 0; opacity: 0; transition: opacity .45s;
+  background: radial-gradient(80% 80% at 50% 120%, rgba(59,110,245,0.22), transparent 60%);
+}
+.card:hover { transform: translateY(-8px); border-color: rgba(245,197,66,0.35); }
+.card:hover::before { opacity: 1; }
+.card-num { font-family: 'Anton', sans-serif; font-size: 2.4rem; color: rgba(245,197,66,0.28); letter-spacing: .05em; }
+.card:hover .card-num { color: rgba(245,197,66,0.6); transition: color .45s; }
+.card-title { margin-top: .6rem; font-size: 1.4rem; font-weight: 700; color: var(--bone); }
+.card-body { margin-top: .75rem; color: rgba(238,242,251,0.68); line-height: 1.6; }
+
+/* ---- service list ---- */
+.svc { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.5rem .25rem; transition: padding-left .35s, background .35s; }
+.svc:hover { padding-left: 1rem; background: linear-gradient(90deg, rgba(59,110,245,0.06), transparent); }
+.svc-name { font-size: 1.35rem; font-weight: 700; color: var(--bone); }
+.svc-sub { margin-top: .2rem; font-size: .85rem; color: rgba(238,242,251,0.5); }
+.svc-time { font-family: 'Anton', sans-serif; font-size: 2rem; letter-spacing: .04em;
+  background: linear-gradient(120deg, var(--gold), var(--ember)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* ---- ministries grid ---- */
+.min { padding: 2.5rem 1.75rem; background: var(--ink); transition: background .4s, transform .4s; }
+.min::selection { background: var(--ember); }
+.min:hover { background: linear-gradient(180deg, rgba(59,110,245,0.12), rgba(10,14,26,1)); }
+.min-title { font-size: 1.15rem; font-weight: 700; color: var(--bone); }
+.min:hover .min-title { color: var(--gold); transition: color .4s; }
+.min-body { margin-top: .6rem; font-size: .92rem; color: rgba(238,242,251,0.6); line-height: 1.55; }
+
+.footlink { transition: color .3s; }
+.footlink:hover { color: var(--gold); }
+
+/* ---- intro spark ---- */
+.intro-spark { box-shadow: 0 0 0 0 rgba(59,110,245,0.9); }
+
+/* ---- scroll cue ---- */
+.scroll-cue { animation: floaty 2.6s ease-in-out infinite; }
+@keyframes floaty { 0%,100% { transform: translate(-50%, 0); } 50% { transform: translate(-50%, 8px); } }
+
+/* ---- reveal base (GSAP animates these in; without JS they stay visible) ---- */
+.reveal { will-change: transform, opacity; }
+
+/* ---- reduced motion: everything calm and visible ---- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal, .hero-title .line { opacity: 1 !important; transform: none !important; }
+  .ember-dot, .scroll-cue, .intro-spark { animation: none !important; }
+  #intro { display: none; }
+}

@@ -1,5 +1,5 @@
-/* Revival Fire Ministry — motion & the living ember field.
-   Signature element: canvas embers rising through the Kalahari night,
+/* Church In The Name of our Lord — motion & the rising light field.
+   Signature element: the pinned "oneness" sequence reciting Ephesians 4:4-6,
    with a GSAP-orchestrated hero and scroll-triggered reveals. */
 
 (() => {
@@ -146,22 +146,29 @@
     });
   });
 
-  // Pinned scripture: hold, drift the embers, gently scale the verse
-  ScrollTrigger.create({
-    trigger: '#scripture',
-    start: 'top top',
-    end: '+=120%',
-    pin: true,
-    pinSpacing: true,
-  });
-  gsap.fromTo('#verse',
-    { scale: 0.94, opacity: 0.25 },
-    { scale: 1, opacity: 1, ease: 'none',
-      scrollTrigger: { trigger: '#scripture', start: 'top 80%', end: 'top top', scrub: true } });
-  gsap.to('#verseTag', {
-    letterSpacing: '0.6em', ease: 'none',
-    scrollTrigger: { trigger: '#scripture', start: 'top bottom', end: 'top top', scrub: true },
-  });
+  // Pinned "oneness" sequence: recite the sevenfold Ephesians 4:4-6 list one phrase
+  // at a time as the visitor scrolls, then settle on the full verse.
+  const oneWords = gsap.utils.toArray('#oneStage .one-word');
+  if (oneWords.length) {
+    gsap.set(oneWords, { opacity: 0, scale: 0.92 });
+    gsap.set(oneWords[0], { opacity: 1, scale: 1 });
+    gsap.set('#oneFull', { opacity: 0, y: 16 });
+
+    const oneTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#oneness', start: 'top top', end: '+=440%',
+        pin: true, pinSpacing: true, scrub: 0.6,
+      },
+    });
+    oneWords.forEach((el, i) => {
+      if (i > 0) {
+        oneTl.to(oneWords[i - 1], { opacity: 0, scale: 0.92, duration: 0.4 }, i)
+             .to(el, { opacity: 1, scale: 1, duration: 0.4 }, `<`);
+      }
+    });
+    oneTl.to(oneWords[oneWords.length - 1], { opacity: 0, scale: 0.92, duration: 0.4 }, oneWords.length)
+         .to('#oneFull', { opacity: 1, y: 0, duration: 0.6 }, `<0.1`);
+  }
 
   // Subtle parallax on the two big gradient statements
   gsap.utils.toArray('.hero-title').forEach((el) => {

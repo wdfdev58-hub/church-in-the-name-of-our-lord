@@ -1,0 +1,25 @@
+Church In The Name of our Lord — image credits
+
+REAL CHURCH ASSETS (carried across from the church's original site,
+churchinthenameofourlord.lovable.app — used with the rebuild's intent
+that the church's own identity and photography carry onto its new home):
+- emblem.png / emblem-sm.png — the church's own emblem (open Bible, radiant
+  cross, "ONE" checklist, Eph 4:4-6). Sourced directly from the original site's
+  asset bundle.
+- hero.jpg — the church's "open Bible in the sanctuary" photo (radiant light,
+  stained glass, empty pews). Sourced from the original site's asset bundle
+  (hero-sanctuary-*.jpg).
+- welcome.jpg — the church's congregation-worshipping-with-hands-raised photo.
+  Sourced from the original site's asset bundle (worship-*.jpg).
+
+STOCK PHOTOGRAPHY (Pexels — no attribution required, credited here anyway):
+- moment-1.jpg — choir singing, stained glass. Photographer via Pexels.
+- moment-2.jpg — man praying over an open Bible in a pew. Photographer via Pexels.
+- moment-3.jpg — community members greeting each other outdoors. Photographer via Pexels.
+- visit.jpg — open Afrikaans Bible with a wooden cross ("Hoop"). Photo by
+  Wendy van Zyl, via Pexels (pexels-photo-4330070).
+
+Note: hero.jpg/welcome.jpg depict the church's identity and a general
+worshipping congregation, not the literal Magojaneng Village congregation —
+carried across per the Phase 2 rebuild brief, which asked specifically for
+these two images from the original site.
